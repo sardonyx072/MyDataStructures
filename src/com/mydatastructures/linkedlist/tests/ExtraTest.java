@@ -1,4 +1,4 @@
-package com.linkedlist.tests;
+package com.mydatastructures.linkedlist.tests;
 
 import static org.junit.Assert.*;
 
