@@ -2,13 +2,13 @@ package com.mydatastructures.linkedlist.singlelinked;
 
 public class SingleLinkedNode<T> {
 	
-	private T element;
+	protected T element;
 	
-	private SingleLinkedNode<T> next;
+	protected SingleLinkedNode<T> next;
 	
 	public SingleLinkedNode (T element, SingleLinkedNode<T> next) {
-		this.element = element;
-		this.next = next;
+		this.setElement(element);
+		this.setNext(next);
 	}
 	
 	public T getElement() {

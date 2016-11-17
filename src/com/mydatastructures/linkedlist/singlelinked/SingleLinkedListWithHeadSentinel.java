@@ -13,7 +13,7 @@ public class SingleLinkedListWithHeadSentinel<T> implements LinkedList<T> {
 	}
 	
 	@Override
-	public boolean isEmpty() {
+	public boolean isEmpty() throws IllegalStateException {
 		return this.first == null;
 	}
 	
@@ -26,7 +26,7 @@ public class SingleLinkedListWithHeadSentinel<T> implements LinkedList<T> {
 	}
 	
 	@Override
-	public T getLast() {
+	public T getLast() throws NoSuchElementException {
 		if (this.isEmpty())
 			throw new NoSuchElementException();
 		else {
@@ -38,7 +38,7 @@ public class SingleLinkedListWithHeadSentinel<T> implements LinkedList<T> {
 	}
 	
 	@Override
-	public T removeFirst() {
+	public T removeFirst() throws NoSuchElementException {
 		if (this.isEmpty())
 			throw new NoSuchElementException();
 		else {
@@ -49,7 +49,7 @@ public class SingleLinkedListWithHeadSentinel<T> implements LinkedList<T> {
 	}
 	
 	@Override
-	public T removeLast() {
+	public T removeLast() throws NoSuchElementException {
 		if (this.isEmpty())
 			throw new NoSuchElementException();
 		else {
@@ -85,7 +85,7 @@ public class SingleLinkedListWithHeadSentinel<T> implements LinkedList<T> {
 	}
 	
 	@Override
-	public void addBefore(T before, T element) {
+	public void addBefore(T before, T element) throws NoSuchElementException {
 		//what if there are multiple instances?
 		if (this.isEmpty())
 			throw new NoSuchElementException();
@@ -104,7 +104,7 @@ public class SingleLinkedListWithHeadSentinel<T> implements LinkedList<T> {
 	}
 	
 	@Override
-	public void addAfter(T after, T element) {
+	public void addAfter(T after, T element) throws NoSuchElementException {
 		//what if there are multiple instances?
 		if (this.isEmpty())
 			throw new NoSuchElementException();
