@@ -1,6 +1,6 @@
-package com.mydatastructures.linkedlist;
+package com.mydatastructures.linkedlist.implementation1.simple;
 
-public interface LinkedList<T> {
+public interface MyLinkedList<T> {
 	
 	public abstract boolean isEmpty();
 	
