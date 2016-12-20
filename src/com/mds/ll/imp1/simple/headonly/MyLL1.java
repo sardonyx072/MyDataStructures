@@ -22,11 +22,13 @@ public class MyLL1<T> {
 		@Override
 		public Node getNext() {return this.next;}
 		@Override
-		public void setNext(Node next) {this.next = next;}
+		public void setNext(MyLLNode<T> next) {this.next = (Node)next;}
 		@Override
 		public boolean hasPrev() {return false;}
 		@Override
 		public Node getPrev() {return null;}
+		@Override
+		public void setPrev(MyLLNode<T> prev) {return;}
 		@Override
 		public String toString() {return "(" + this.element + ")";}
 	}
